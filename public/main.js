@@ -316,12 +316,37 @@ function renderStep(step) {
 }
 
 function handleTrigger(trigger, extraData = null) {
+
+  if(trigger==="restart"){
+    userDataSelection=null;
+    userPersonality={
+      randomness:50,
+      friendliness:50,
+      wordiness:50,
+    };
+    currentProgress =0;
+
+    const progressFill = document.getElementById("progress-fill");
+    const progressText = document.getElementById("progress-text");
+
+    document.querySelector(".browser-window").style.visibility = "hidden";
+    document.querySelector(".browser-window").style.display = "none";
+
+    if (progressFill) progressFill.style.width = "0%";
+    if(progressText) progressText.textContent = "0%";
+    hideProgressBar();
+    renderStep(scriptByIndex[1]);
+    return;
+  }
+
   const step = scriptByTrigger[trigger] || scriptByIndex[parseInt(trigger)];
 
   if (!step) {
     console.warn("No step found for trigger:", trigger);
     return;
   }
+
+  
   //to save training selection
   // if (trigger === "choice-data" && extraData) {
   //   if (extraData === "Data Type 1" || extraData === "Data Type 3") {
@@ -636,7 +661,7 @@ function renderStage3Chatbot(step) {
     nextBtn.textContent = step.nextButton[0]["text"];
     nextBtn.addEventListener("click", () => {
       chatbotContainer.style.display = "none";
-      handleTrigger(step.nextButton.trigger);
+      handleTrigger(step.nextButton[0]["trigger"]);
     });
   }
 }

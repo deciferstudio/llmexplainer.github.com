@@ -445,6 +445,19 @@
       "nextButton": [
         { "text": "Next", "trigger": "stage-3B", "class": ["stage-btn"] }
       ]
+    },
+    {
+      "trigger": "stage-3B",
+      "body":[{
+        "text": "You've trained your own chatbot! Now you know how AI chatbots are built from training to deployment."
+      }],
+      "buttons":[
+        {
+          "text":"Start Over",
+          "trigger":"restart",
+          "class":["stage-btn"]
+        }
+      ]
     }
   ]
 }
