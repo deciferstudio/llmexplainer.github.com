@@ -10,14 +10,12 @@ body {
   margin: 1.5rem;
 }
 
-.navbar{
-
- display: flex;
+.navbar {
+  display: flex;
   font-size: 1.25rem;
   justify-content: space-between;
   padding: 0rem 1rem 3rem 0rem;
   align-items: center;
-
 }
 
 #navbar-list {
@@ -38,7 +36,7 @@ body {
   gap: 1rem;
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -52,9 +50,15 @@ button {
   padding: 10px 20px;
 }
 
-.stage-btn{
-    background-color: rgb(207, 245, 233);
-    border-radius: 0.3rem;
+button:hover {
+  cursor: pointer;
+}
+
+.stage-btn {
+  background-color: rgb(207, 245, 233);
+  border-radius: 0.3rem;
+  width: 35%;
+  margin: 1.5rem auto;
 }
 
 /* #start-btn {
@@ -67,18 +71,18 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60rem;                 
-  max-width: 90%;             
+  width: 60rem;
+  max-width: 90%;
   min-height: 30rem;
-   transition: opacity 2s ease-in-out;   
+  transition: opacity 2s ease-in-out;
 }
 
-.browser-window{
+.browser-window {
   visibility: hidden;
   flex-direction: column;
   border: 0.125rem solid #ccc;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   background: #fff;
   width: 90%;
   max-width: 90%;
@@ -89,13 +93,17 @@ button {
   padding-bottom: 2rem;
 }
 
-.browser-content{
-  flex: 1; 
+.browser-content {
+  flex: 1;
   padding: 2rem;
   box-sizing: border-box;
 }
 
-.browser-content, .content-zone, #generic-container, .interactive-body, .button-group{
+.browser-content,
+.content-zone,
+#generic-container,
+.interactive-body,
+.button-group {
   max-width: 100%;
   overflow-wrap: break-word;
   /* word-break: break-word; */
@@ -114,18 +122,15 @@ button {
   box-sizing: border-box;
 }
 
-.interactive-body span{
-  display: inline;;
+.interactive-body span {
+  display: inline;
 }
 
-
-
 #main-container {
- 
-   background: transparent;           
+  background: transparent;
   /* border: 0.125rem solid #ccc; 
   box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);  */
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;
   visibility: hidden;
   padding: 0.5rem 3rem;
   margin: 2rem auto;
@@ -133,22 +138,19 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50rem;                 
-  max-width: 80%;             
-  min-height: 35rem;  
-  justify-content: center; 
+  width: 50rem;
+  max-width: 80%;
+  min-height: 35rem;
+  justify-content: center;
 }
 
-
-
 .browser-header {
-  
   display: flex;
   align-items: center;
   background: #f5f5f5;
   padding: 0.5rem;
   position: relative;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .browser-header .dot {
@@ -159,9 +161,15 @@ button {
   margin-right: 0.32rem;
 }
 
-.browser-header .red { background: #ff5f57; }
-.browser-header .yellow { background: #ffbd2e; }
-.browser-header .green { background: #28c940; }
+.browser-header .red {
+  background: #ff5f57;
+}
+.browser-header .yellow {
+  background: #ffbd2e;
+}
+.browser-header .green {
+  background: #28c940;
+}
 
 .browser-header .url-bar {
   margin-left: auto;
@@ -176,9 +184,9 @@ button {
   text-align: center;
 }
 
-.progress-bar{
+.progress-bar {
   display: flex;
-/*  width: 100%;*/
+  /*  width: 100%;*/
   justify-content: center;
   padding: 1rem;
   align-items: center;
@@ -186,17 +194,17 @@ button {
   margin: 2rem;
 }
 .spacer {
-  width: 10%; 
-  visibility: hidden; 
+  width: 10%;
+  visibility: hidden;
 }
-.stage-tag{
-  width:10%;
+.stage-tag {
+  width: 10%;
   height: 1rem;
   background-color: #e0e0e0;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 0.75rem;
   font-weight: bold;
   color: #333;
@@ -212,8 +220,7 @@ button {
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-  
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .progress-fill {
@@ -233,32 +240,25 @@ button {
   color: #333;
 }
 
-.button-group{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-  
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.interactive-body{
-    background-color: rgba(237, 236, 236, 0.702);
-    border-radius: 0.3rem;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-  
-
+.interactive-body {
+  background-color: rgba(237, 236, 236, 0.702);
+  border-radius: 0.3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
 }
 
 /* this was a fix for the text added to the autocorrect para so it appears right next to it, as opposed to in a new line  */
 .interactive-body.continuous-text p {
   margin: 0;
-  display: inline; 
- 
+  display: inline;
 }
 
 .interactive-body.continuous-text p + p::before {
@@ -266,53 +266,49 @@ button {
 }
 
 .delayed-text {
-  opacity: 0;             
-  
+  opacity: 0;
 }
 
 .delayed-text.has-content {
   transition: opacity 0.8s ease;
-  opacity: 1;           
+  opacity: 1;
 }
-
 
 /* Typewriter setup */
 .typewriter {
-  display: inline; 
-  min-width: 0;      
+  display: inline;
+  min-width: 0;
   border-right: 2px solid #333;
   white-space: normal;
   overflow: visible;
-  box-sizing: break-word; 
+  box-sizing: break-word;
   text-align: inherit;
 }
 
 .typewriter.done {
-  border-right: 2px solid transparent; 
-
+  border-right: 2px solid transparent;
 }
-
 
 /* CSS Animations */
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translateY(20px); 
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes slideInLeft {
-  from { 
+  from {
     opacity: 0;
-    transform: translateX(-30px); 
+    transform: translateX(-30px);
   }
-  to { 
+  to {
     opacity: 1;
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
@@ -331,21 +327,21 @@ button {
 }
 
 /* Button stagger classes, staggering button groups */
-.button-stagger-1 { 
-  opacity: 0; 
-  animation: fadeIn 0.5s ease-out calc(1s + var(--extra-delay, 0s)) forwards; 
+.button-stagger-1 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out calc(1s + var(--extra-delay, 0s)) forwards;
 }
-.button-stagger-2 { 
-  opacity: 0; 
-  animation: fadeIn 0.5s ease-out calc(1.2s + var(--extra-delay, 0s)) forwards; 
+.button-stagger-2 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out calc(1.2s + var(--extra-delay, 0s)) forwards;
 }
-.button-stagger-3 { 
-  opacity: 0; 
-  animation: fadeIn 0.5s ease-out calc(1.4s + var(--extra-delay, 0s)) forwards; 
+.button-stagger-3 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out calc(1.4s + var(--extra-delay, 0s)) forwards;
 }
-.button-stagger-4 { 
-  opacity: 0; 
-  animation: fadeIn 0.5s ease-out calc(1.6s + var(--extra-delay, 0s)) forwards; 
+.button-stagger-4 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out calc(1.6s + var(--extra-delay, 0s)) forwards;
 }
 
 .button-choice {
@@ -354,14 +350,13 @@ button {
   border-width: 2px;
   background-color: lightgrey;
   color: black;
-  margin: 0.5rem; 
+  margin: 0.5rem;
   padding: 0.6rem 0.6rem;
-
 }
 
 .button-choice:hover {
   background-color: lightgreen;
-
+  cursor: pointer;
 }
 
 .button-choice:clicked {
@@ -419,15 +414,25 @@ button {
   font-weight: 500;
 }
 
-
-
-.text-red{
+.text-red {
   background-color: rgb(242, 120, 120);
 }
 
-.text-orange{
+.text-orange {
   background-color: rgb(245, 172, 70);
 }
+
+#finetuning-4-generated-text.placeholder-text {
+  color: #999;
+  font-style: italic;
+}
+
+#finetuning-4-generated-text-container.visible {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
 
 .finetuning-container {
   width: 100%;
@@ -530,48 +535,42 @@ button {
   text-align: center;
 }
 
-
-
-.generic-container{
- 
+.generic-container {
   display: contents;
-
 }
 
-
 #finetuning-step-4 {
-  width: 100%;          
-  display: flex;  
-  flex-direction: column;     
-  justify-content: center; 
-  padding: 0.5rem 0;   
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0;
   box-sizing: border-box;
 }
 
-.slider-container{
-  width:100%;
+.slider-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap:0.7rem;
+  gap: 0.7rem;
   font-size: 1.2rem;
 }
 
-.sliders-group{
+.sliders-group {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap:3rem;
+  gap: 3rem;
 }
 .slider {
-  width: 90%;           
+  width: 90%;
   height: 1.5rem;
   background: #ddd;
   overflow: hidden;
   cursor: pointer;
 }
 
-
-.slider-fill{
+.slider-fill {
   position: relative;
   top: 0;
   left: 0;
@@ -581,8 +580,8 @@ button {
   transition: width 0.1s ease-out;
 }
 
-.slider-value{
-  position:absolute;
+.slider-value {
+  position: absolute;
   right: 0.5rem;
   top: 0.2rem;
   font-size: 0.8rem;
@@ -591,14 +590,13 @@ button {
   user-select: none;
 }
 
-.finetuning-4-next{
+.finetuning-4-next {
   width: 50%;
   margin: 3rem auto;
   padding: 0.7rem;
 }
 
-
-#finetuning-4-generated-text-container{
+#finetuning-4-generated-text-container {
   /* visibility: hidden; */
   background-color: #f2f2f2;
   border-radius: 12px;
@@ -606,134 +604,134 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: opacity 3s ease-in, visibility 3s linear 3s;
-
 }
-
 
 #finetuning-4-generated-text-container.visible {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
 }
-#finetuning-4-generated-text{
+#finetuning-4-generated-text {
   background-color: white;
+  font-style:normal;
   border-radius: 5px;
   padding: 0.5rem;
-  width:45%;
+  width: 45%;
   font-size: 1rem;
 }
 
-
-#stage3-chatbot{
-  display:flex;
+#stage3-chatbot {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width:100%;
+  width: 100%;
   align-items: center;
-  max-height: 500px;    /* ?? */
+  max-height: 500px; /* ?? */
 }
 
-
-
-
-
-#stage3-chatbot-questions{
-  display:flex;
+#stage3-chatbot-questions {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.stage3-question{
-  background-color:#fedaa0ff;
+.stage3-question {
+  background-color: #fedaa0ff;
   color: black;
-  border:none;
+  border: none;
   border-radius: 0.7rem;
   cursor: pointer;
   flex: 1 1 auto;
   min-width: 30%;
-  transition: background 0.3s, transform 0.2s; 
+  transition: background 0.3s, transform 0.2s;
 }
 
-.stage3-question:hover{
+.stage3-question:hover {
   transform: scale(1.05);
-  background-color: rgb(243, 183, 86) ;
+  background-color: rgb(243, 183, 86);
+}
+
+.stage3-question:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #e0e0e0;
 
 }
 
-#stage3-chatbot-window{
+.stage3-question:disabled:hover{
+  transform: none;
+  background-color: #e0e0e0;
+
+}
+
+#stage3-chatbot-window {
   flex: 1;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   background-color: #212121;
   gap: 1rem;
-  padding:5rem;
+  padding: 5rem;
   border-radius: 10px;
-  width:90%;
+  width: 90%;
   min-height: 20rem;
   color: white;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow-y:auto;
+  overflow-y: auto;
   text-align: left;
 }
 
-.stage3-chatbot-answer{
+.stage3-chatbot-answer {
   align-self: flex-start;
   font-size: 1rem;
- 
-
 }
 
-.stage3-chatbot-user-msg{
+.stage3-chatbot-user-msg {
   align-self: flex-end;
   background-color: #303030;
   font-size: 1rem;
   color: white;
   border-radius: 1rem 1rem 0 1rem;
-
-
 }
 
-.stage3-chatbot-answer, .stage3-chatbot-user-msg{
+.stage3-chatbot-answer,
+.stage3-chatbot-user-msg {
   max-width: 75%;
   padding: 0.6rem 0.9rem;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
 .rotate-message {
- position: fixed;
- flex-direction: column;
+  position: fixed;
+  flex-direction: column;
   inset: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background:#fadede;
   color: #000;
   display: none;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem 0rem;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   z-index: 999999;
   overflow: hidden;
-  box-sizing: border-box;     
+  box-sizing: border-box;
 }
 
-.rotate-message-txt{
+.rotate-message-txt {
   width: 40%;
   max-width: 90%;
-  
 }
-.rotate-message img{
+.rotate-message img {
   width: 20%;
 
   margin-top: 1.5rem;
 }
 /* RESPONSIVE  */
-
-
 
 /* tablets */
 
@@ -746,24 +744,21 @@ button {
 
 } */
 
-
-
 /* phone in portrait */
 @media screen and (orientation: portrait) and (max-width: 1300px) {
-   body {
+  body {
     margin: 0;
-    overflow: hidden; 
+    overflow: hidden;
   }
 
-
   .rotate-message {
-    display: flex;  
+    display: flex;
     height: 100%;
     width: 100%;
     padding-right: 8rem;
   }
 
-    #intro-container,
+  #intro-container,
   .browser-window,
   nav {
     display: none;
@@ -772,73 +767,218 @@ button {
 
 /* phone in landscape */
 @media screen and (orientation: landscape) and (max-width: 950px) {
-
-  html{
+  html {
     margin: 0rem;
   }
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-  #intro-container{
+  #intro-container {
     padding: 1rem 3rem;
-    margin: 1rem auto; 
+    margin: 1rem auto;
     font-size: 1.5rem;
   }
 
-  #start-btn{
+  #start-btn {
     margin: 1.5rem;
   }
 
-  .browser-window{
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0.2rem;
+  .browser-window {
+    width: 95%;
+    max-width: 95%;
+    margin: 0.2rem auto;
+    padding: 0rem;
 
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+    min-height: auto;
   }
 
-  #main-container{
-    font-size: 1.3rem;
-    max-width: 90%;
-    margin: 1rem auto;
+  .browser-content {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 6rem);
+  }
+
+  .browser-header {
+    display: none;
+  }
+
+  #progress-bar {
+    margin: 0rem;
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .progress-bar-container {
+    width: 40%;
+  }
+
+  #main-container {
+    font-size: 1.15rem;
+    max-width: 95%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1.5rem;
+    justify-content: center;
+    flex: 1;
+    min-height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-container.has-overflow {
     justify-content: flex-start;
-    min-height: 20rem;
+    overflow-y: auto;
   }
 
-  #main-container p{
-    margin-top: 0.7rem;
+  #main-container p {
+    margin: 0.3rem 0rem;
+  }
+
+  .button-group {
+    gap: 1rem;
+    margin-top: 0.2rem;
+  }
+
+  .button-group .stage-btn {
+    width: 35%;
+
+    margin: 0.5rem auto;
+  }
+
+  button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .stage-tag {
+    width: 20%;
+    font-size: 0.7rem;
+  }
+
+  .spacer {
+    width: 0%;
+  }
+
+  .interactive-body{
+    margin-top: 1rem;
+  }
+
+  .training-step-1-paragraph{
+    margin-bottom: 1rem;
+  }
+
+  #training-1-select{
+    margin: 1.3rem 0rem;
+    
+  }
+  #likelihood-container{
+    margin-bottom: 1.6rem;
+  }
+
+  .sliders-group{
+    margin-top: 1rem;
+  }
+  .slider-label{
+    font-size: 1.1rem;
+  }
+
+  .finetuning-4-next{
+    width: 30%;
+  }
+
+  #finetuning-4-generated-text-container{
+    margin-top: 0.7rem; 
+  }
+
+  .finetuning-4-next{
+    margin: 1.5rem auto;
+  }
+  #finetuning-step {
+    padding: 0.7rem 1rem;
+    gap: 0.6rem;
+  }
+
+  .finetuning-question {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .finetuning-responses {
+    flex-direction: column;
+    width: 90%;
+    margin: 0rem;
+    font-size: 0.85rem;
+    gap: 0;
+  }
+
+  .finetuning-stage-btn{
+    margin: 1rem auto; 
+  }
+
+  .finetuning-next {
+    margin-top: 0rem;
+  }
+  .finetuning-prompt {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .finetuning-prompt#finetuning-prompt {
+    margin-top: 0.2rem;
+  }
   
+  #stage3-chatbot-questions{
+    flex-direction: row;
   }
 
-  .button-group{
-    gap: 2rem;
-  }
-  button{
-    margin: 1rem;
+  #stage3-chatbot-window {
+    padding: 1.5rem;
+    min-height: 8rem;
+    max-height: 8.9rem; 
+    font-size: 0.8rem;
+    flex:1;
   }
 
-   .stage-tag{
-          width: 15%;
-        }
- 
+  .stage3-question {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem; 
+
+  }
+
+  #stage3-chatbot-next{
+    margin: 0.5rem;
+  }
+
+   #stage3-chatbot {
+    height: 100%;
+    max-height: none;
+    gap: 0.5rem;
+  }
+  
 }
-
 
 /* tablet in landscape */
 
-@media screen and (orientation: landscape) 
-       and (min-width: 951px) 
-       and (max-width: 1366px) {
+@media screen and (orientation: landscape) and (min-width: 951px) and (max-width: 1366px) {
+  button {
+    margin: 1.5rem 1.5rem;
+  }
 
-       button{
-          margin: 1.5rem 1.5rem;
-        }
-
-        #main-container{
-          margin: 1rem auto;
-        }
-        .stage-tag{
-          width: 15%;
-        }
- 
+  #main-container {
+    margin: 1rem auto;
+  }
+  .stage-tag {
+    width: 15%;
+  }
 }
-
-

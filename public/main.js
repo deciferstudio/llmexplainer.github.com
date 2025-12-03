@@ -188,6 +188,11 @@ function renderStep(step) {
           }
           if (p.type) para.classList.add(`text-${p.type}`);
 
+
+            if (step.trigger === "training-step-1") {
+          para.classList.add("training-step-1-paragraph");
+        }
+
           if (p.animation === "typewriter") {
             //delay was kind of a patchy addition, if i didnt want the typing to start immediately. this is also in ms.
             const delay = p.delay || 0;
@@ -538,6 +543,12 @@ function renderFineTuningStep4(step) {
   );
   const output = document.getElementById("finetuning-4-generated-text");
 
+
+  outputContainer.classList.add("visible");
+  output.textContent = "Your generated text will appear here...";
+  output.classList.add("placeholder-text");
+
+
   generateBtn.textContent = step.generateButtonText;
   let nextBtnExists = false;
   generateBtn.addEventListener("click", () => {
@@ -552,13 +563,14 @@ function renderFineTuningStep4(step) {
     };
 
     const generatedText = getPersonalityText(userDataSelection, s1, s2, s3);
-    outputContainer.classList.add("visible");
+    output.classList.remove("placeholder-text");
     output.textContent = generatedText;
 
     if (!nextBtnExists) {
       const nextBtn = document.createElement("button");
       nextBtn.innerText = step.nextButton[0]["text"];
       nextBtn.classList.add(step.nextButton[0]["class"]);
+      nextBtn.classList.add("finetuning-stage-btn"); 
       finetuningStep4.appendChild(nextBtn);
       nextBtnExists = true;
       nextBtn.addEventListener("click", () => {
@@ -588,6 +600,11 @@ function renderStage3Chatbot(step) {
       buttons[index].textContent = qa.question;
 
       buttons[index].addEventListener("click", () => {
+
+        //disabling btn after click 
+        buttons[index].disabled = true;
+        buttons[index].style.opacity="0.5";
+        buttons[index].style.cursor ="not-allowed";
         const userMsg = document.createElement("div");
         userMsg.classList.add("stage3-chatbot-user-msg");
         userMsg.classList.add("fade-in");
