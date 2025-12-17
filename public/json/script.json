@@ -203,8 +203,8 @@
 
     {
       "trigger": "stage-1-loader",
-      "body": [{ "text": "Stage 1: Training", "class": ["transition-title"] }],
-      "timer": { "duration": 2000, "trigger": "stage-1" }
+      "body": [{ "text": "Stage 1: Training", "class": ["stage-1-transition"] }],
+      "timer": { "duration": 4000, "trigger": "stage-1" }
     },
     {
       "trigger": "stage-1",
@@ -343,8 +343,8 @@
     },
     {
       "trigger": "finetuning-loader",
-      "body": [{ "text": "Stage 2: Post-training" }],
-      "timer": { "duration": 2000, "trigger": "finetuning-step-1" }
+      "body": [{ "text": "Stage 2: Post-training", "class": ["stage-2-transition"] }],
+      "timer": { "duration": 5000, "trigger": "finetuning-step-1" }
     },
 
     {
@@ -420,11 +420,12 @@
     },
     {
       "trigger": "stage-3-loader",
-      "body": [{ "text": "Stage 3: Try it out!" }],
-      "timer": { "duration": 2000, "trigger": "stage-3A-chatbot" }
+      "body": [{ "text": "Stage 3: Try it out!", "class": ["stage-3-transition"]}],
+      "timer": { "duration": 7000, "trigger": "stage-3A-chatbot" }
     },
     {
       "trigger": "stage-3A-chatbot",
+      "class": ["chatbot"],
       "order": ["custom"],
       "chatbotIntro": {
         "text": "Hey there! 👋 Pick a question and get started.",

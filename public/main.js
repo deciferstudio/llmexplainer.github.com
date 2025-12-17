@@ -16,7 +16,7 @@ let userPersonality = {
 };
 
 const customRenderers = {
-  // "stage-1": nextButtonForDataSelection
+  // "stage-1": nextButtonForDataSelection,
   "training-step-1": renderTrainingStep1,
   "finetuning-step-2": renderFineTuningStep2,
   "finetuning-step-4": renderFineTuningStep4,
@@ -33,8 +33,11 @@ const PROGRESS_MILESTONES = {
   //add and edit as we go
 };
 
+
+const browserWindow = document.getElementsByClassName("browser-window")[0];
+
 const STAGE_INFO = {
-  "stage-1": { name: "Training", color: "#c9fdc4ff" },
+  "stage-1": { name: "Training", color: "#c9fdc4ff"},
   "finetuning-loader": { name: "Post-training", color: "#d1d7faff" },
   "stage-3A-chatbot": { name: "Deployment", color: "#fedaa0ff" },
 };
@@ -179,7 +182,8 @@ function renderStep(step) {
     }, step.timer.duration);
   }
 
-  const contentRenderers = {
+
+ const contentRenderers = {
     body: () => {
       if (step.body) {
         step.body.forEach((p) => {
@@ -189,7 +193,28 @@ function renderStep(step) {
           // they exist in an array in the element key-value pair in the json. eg: {"text": "llms xyz", "class":["fade-in","another-class"]}
           if (p.class) {
             p.class.forEach((cls) => para.classList.add(cls));
+
+            if(p.class.includes("stage-1-transition")) {
+           browserWindow.style.backgroundImage = "url('../imgs/stage1.gif')";
+        }
+
+          else if(p.class.includes("stage-2-transition")) {
+           browserWindow.style.backgroundImage = "url('../imgs/stage2.gif')";
+        }
+
+            else if(p.class.includes("stage-3-transition")) {
+           browserWindow.style.backgroundImage = "url('../imgs/stage3.gif')";
+        }
+
+            else {
+          browserWindow.style.backgroundImage = "none";
           }
+          }
+
+          if(!p.class) {
+            browserWindow.style.backgroundImage = "none";
+          }
+
           if (p.type) para.classList.add(`text-${p.type}`);
 
 
@@ -210,6 +235,7 @@ function renderStep(step) {
         });
       }
     },
+
 
     interactiveBody: () => {
       if (step.interactiveBody) {
@@ -611,6 +637,8 @@ function renderFineTuningStep4(step) {
 }
 
 function renderStage3Chatbot(step) {
+
+  browserWindow.style.backgroundImage = "none";
   const chatbotContainer = document.getElementById("stage3-chatbot");
   const questionContainer = document.getElementById("stage3-chatbot-questions");
   const chatWindow = document.getElementById("stage3-chatbot-window");
