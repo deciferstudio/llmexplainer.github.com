@@ -81,7 +81,7 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"language model\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
         }
       ],
       "interactiveBody": [
@@ -113,7 +113,7 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"language model\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
         }
       ],
       "interactiveBody": [
@@ -130,7 +130,7 @@
       "interactiveBodyClass": ["continuous-text", "delayed-text"],
       "buttons": [
         {
-          "text": "STAGE 1: Training",
+          "text": "STAGE 1: TRAINING",
           "class": ["stage-btn", "fade-in-delayed"],
           "trigger": "stage-1-loader"
         }
@@ -144,7 +144,7 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"language model\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
         }
       ],
       "interactiveBody": [
@@ -162,7 +162,7 @@
       "interactiveBodyClass": ["continuous-text", "delayed-text"],
       "buttons": [
         {
-          "text": "STAGE 1: Training",
+          "text": "STAGE 1: TRAINING",
           "class": ["stage-btn", "fade-in-delayed"],
           "trigger": "stage-1-loader"
         }
@@ -177,7 +177,7 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"language model\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
         }
       ],
       "interactiveBody": [
@@ -203,7 +203,7 @@
 
     {
       "trigger": "stage-1-loader",
-      "body": [{ "text": "Stage 1: Training", "class": ["stage-1-transition"] }],
+      "body": [{ "text": "STAGE 1: TRAINING", "class": ["stage-1-transition"] }],
       "timer": { "duration": 4000, "trigger": "stage-1" }
     },
     {
@@ -334,7 +334,7 @@
       ],
       "buttons": [
         {
-          "text": "STAGE 2: Post-training",
+          "text": "STAGE 2: Post-Training",
           "trigger": "finetuning-loader",
           "class": ["stage-btn"]
         }
@@ -342,7 +342,7 @@
     },
     {
       "trigger": "finetuning-loader",
-      "body": [{ "text": "Stage 2: Post-training", "class": ["stage-2-transition"] }],
+      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
       "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
     },
 
