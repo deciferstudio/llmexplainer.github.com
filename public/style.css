@@ -70,15 +70,14 @@ margin: 0.5rem;
   margin: 3rem;
   padding: 15px 40px;
   border-radius: 10px;
-  background: #610a27;
+  background: #6AEFB5;
   border: 0;
   border-radius: 5px;
-  box-shadow: 0 6px 0 #350515, 0 5px 15px -4px #000;
-  color: #fff;
+  box-shadow: 0 6px 0 #4D9370, 0 5px 15px -4px #000;
+  color: black;
   cursor: pointer;
   font-family: roboto;
-
-  font-weight: 500;
+  font-weight: 400;
 
 /*  height: 50px;*/
   padding: 5px;
@@ -92,24 +91,25 @@ margin: 0.5rem;
 
  button:active {
   box-shadow: 0 0 0 #350515, 0 2px 6px -4px #000;
-  top: 6px;
+  transform: translateY(6px);
 }
 
 
  button:hover, button:focus{
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
   outline: 0;
 
 }
 
 .stage-btn {
 /*  background-color: rgb(207, 245, 233);*/
-  background-color: #096043;
-  box-shadow: 0 6px 0 #053525, 0 5px 15px -4px #000;
+  background-color: #6AEFB5;
+  box-shadow: 0 6px 0 #4D9370, 0 5px 15px -4px #000;
 /*  border-radius: 0.3rem;*/
   width: 35%;
-/*  margin: 1.5rem auto;*/
+  margin: 1.5rem auto;
+  color: #204a35;
 }
 
 .stage-btn:active {
@@ -264,7 +264,6 @@ margin-top: 10%;
 .stage-tag {
   width: 10%;
   height: 1rem;
-  background-color: #e0e0e0;
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
@@ -290,7 +289,7 @@ margin-top: 10%;
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  background: linear-gradient(90deg, #4CAA81, #6AEFB5);
   transition: width 0.6s ease;
   width: 0%;
 }
@@ -459,7 +458,7 @@ margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .likelihood-bar-wrapper {
@@ -467,6 +466,7 @@ margin-top: 10%;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  width: 25%;
 }
 
 .word-label {
@@ -477,15 +477,16 @@ margin-top: 10%;
 
 .likelihood-bar {
   width: 5rem;
-  height: 1rem;
+  height: 1.5rem;
   background-color: #eee;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .likelihood-bar-fill {
-  background-color: #4caf50;
+  background-color: #FF8B8F;
   height: 100%;
   transition: width 0.5s ease;
 }
@@ -501,11 +502,11 @@ margin-top: 10%;
 }
 
 .text-red {
-  background-color: rgb(242, 120, 120);
+  background-color: #FF8B8F;
 }
 
 .text-orange {
-  background-color: rgb(245, 172, 70);
+  background-color: #FBD9B8;
 }
 
 #finetuning-4-generated-text.placeholder-text {
@@ -554,6 +555,8 @@ margin-top: 10%;
   margin: 0;
   flex-grow: 0.5;
   font-size: 1.2rem;
+  text-align: left;
+  width: 80%;
 }
 
 .finetuning-prompt {
@@ -571,7 +574,7 @@ margin-top: 10%;
 
 .finetuning-response {
   flex: 1;
-  background: #F9EBBB;
+  background: lightgrey;
   color: black;
 /*  border: 2px solid transparent;*/
   border-radius: 12px;
@@ -589,7 +592,7 @@ margin-top: 10%;
 }
 
 .finetuning-response.selected {
-  background: #6AEFB5;
+  background: #8BB6FF;
 /*  border-color: rgb(127, 146, 255);*/
 }
 
@@ -604,7 +607,6 @@ margin-top: 10%;
   font-weight: 500;
   transition: all 0.2s ease;
   width: 25%;
-  color:lightgrey;
 }
 
 .finetuning-next:enabled {
@@ -614,7 +616,6 @@ margin-top: 10%;
 .finetuning-next:disabled {
   cursor: not-allowed;
   opacity: .5;
-  box-shadow: 0 6px 0 #350515, 0 5px 15px -4px #000;
 
 }
 
@@ -664,9 +665,10 @@ margin-top: 10%;
 .slider {
   width: 90%;
   height: 1.5rem;
-  background: #ddd;
+  background: #f2f1f1;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .slider-fill {
@@ -675,7 +677,7 @@ margin-top: 10%;
   left: 0;
   width: 50%;
   height: 100%;
-  background: #4190e2;
+  background: #8BB6FF;
   transition: width 0.1s ease-out;
 }
 
@@ -752,6 +754,10 @@ margin-top: 10%;
   flex: 1 1 auto;
   min-width: 30%;
   transition: background 0.3s, transform 0.2s;
+  box-shadow: none;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  font-weight: 300;
 }
 
 .stage3-question:hover {
@@ -856,6 +862,30 @@ margin-top: 10%;
 
 } */
 
+
+#training-1-select {
+  font-size: 1rem;
+  background: lightgrey;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0px 3px grey, 0px 0px 0px 0px #0000;
+  opacity: .85;
+  border: none;
+}
+
+#training-1-select:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1500px) {
+  .browser-window {
+    margin-top: 10%;
+    max-width: 55%;
+  }
+}
+
+
 /* phone in portrait */
 @media screen and (orientation: portrait) and (max-width: 1300px) {
   body {
@@ -952,6 +982,15 @@ margin-top: 10%;
     line-height: 1.5;
   }
 }
+
+
+#training-1-select {
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+
 
 /* phone in landscape */
 @media screen and (orientation: landscape) and (max-width: 950px) {
@@ -1059,12 +1098,18 @@ margin-top: 10%;
     margin: 0.5rem auto;
   }
 
-
-#data-next-button {
-  display: flex;
-  gap: 1rem;
+.button-group button:clicked  {
+  transition: transform 0.1s, box-shadow 0.1s;
+  top: 6px;
 }
 
+#data-next-btn button {
+ opacity: .5;
+}
+
+#data-next-btn button:clicked {
+
+}
 
   .stage-tag {
     width: 20%;
@@ -1085,6 +1130,7 @@ margin-top: 10%;
 
   #training-1-select{
     margin: 1.3rem 0rem;
+    font-size: 1rem;
     
   }
   #likelihood-container{
@@ -1124,6 +1170,7 @@ margin-top: 10%;
   .finetuning-question {
     font-size: 1rem;
     padding: 0.8rem 1rem;
+    text-align: left;
   }
 
   .finetuning-responses {

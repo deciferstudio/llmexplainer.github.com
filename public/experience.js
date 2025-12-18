@@ -37,9 +37,9 @@ const PROGRESS_MILESTONES = {
 const browserWindow = document.getElementsByClassName("browser-window")[0];
 
 const STAGE_INFO = {
-  "stage-1": { name: "Training", color: "#c9fdc4ff"},
-  "finetuning-loader": { name: "Post-training", color: "#d1d7faff" },
-  "stage-3A-chatbot": { name: "Deployment", color: "#fedaa0ff" },
+  "stage-1": { name: "Training", color: "#6AEFB5"},
+  "finetuning-loader": { name: "Post-training", color: "#8BB6FF" },
+  "stage-3A-chatbot": { name: "Deployment", color: "#FBD9B8" },
 };
 
 async function loadScript() {
