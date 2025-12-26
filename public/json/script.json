@@ -10,8 +10,8 @@
 
     "navbar": {
       "title": "How to Train Your Chatbot",
+           "about": "About",
       "resources": "Resources",
-      "about": "About",
       "language": "EN"
     }
   },
@@ -22,7 +22,13 @@
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "AI chatbots have become increasingly common. But how much do you know about how these technologies actually work? Could you train your own?"
+          "text": "AI chatbots have become increasingly common. How much do you know about how these technologies actually work?",
+          "class": "intro-header"
+        
+        },
+        {
+          "text": "Will change this design. In this brief playable explainer, go through the main stages of building a chat assistance like ChatGPT, Claude, or DeepSeek. From choosing what type of data it's trained on to what kind of tone it responds to questions in, learn what kinds of decisions go into the development of these technologies, and what capabilities and limitations they introduce.",
+          "class": ["intro-para"]
         }
       ],
       "buttons": [{ "text": "START", "id": "start-btn", "trigger": "start" }]
