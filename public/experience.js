@@ -546,7 +546,7 @@ function renderFineTuningStep4(step) {
 
 
   outputContainer.classList.add("visible");
-  output.textContent = "Your generated text will appear here...";
+  output.textContent = "Move the 'personality' levers above to see corresponding sample text. Your generated text will appear here each time you click above.";
   output.classList.add("placeholder-text");
 
 

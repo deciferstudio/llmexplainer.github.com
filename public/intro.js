@@ -32,12 +32,12 @@ async function loadIntro() {
     container.appendChild(intro_header);
 
     const intro_body = document.createElement("div");
-    intro_body.className = "intro_body";
+    intro_body.className = "intro-body";
 
     const intro_img = document.createElement("img");
     intro_img.src = "../imgs/stage3.gif";
     intro_img.alt = "Add alt text";
-    intro_img.className = "intro_img";
+    intro_img.className = "intro-img";
 
     const intro_para = document.createElement("p");
     intro_para.textContent = introStep.body[1].text;
