@@ -971,8 +971,8 @@ width: 70%;
 }
 
 .rotate-message-txt {
-  width: 75%;
-  max-width: 75%;
+  width: 85%;
+  max-width: 85%;
   font-family: "Karrik";
 }
 .rotate-message img {
@@ -1414,6 +1414,74 @@ flex-direction: row;
   }
   
 }
+
+
+
+/*mobile landscape and short display*/
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .button-stagger-1, .button-stagger-2, .button-stagger-3, .button-stagger-4 , button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .browser-window {
+    width: 98%;
+    max-width: 98%;
+    margin-left: 1%;
+    min-height: 95vh;
+  }
+
+  .progress-bar-container {
+    margin-left: 20%;
+  }
+
+  .stage-tag {
+    width: 30%;
+    margin-left: 5%;
+  }
+
+  .training-1-select {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #likelihood-container {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  #feedback-btn {
+    margin-top: 2.5rem;
+  }
+
+  #finetuning-step-4 {
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  #generate-txt-btn {
+    padding: 0;
+    height: 1.75rem;
+  }
+
+  .finetuning-responses {
+    width: 100%;
+  }
+
+  .finetuning-response {
+    margin: .2rem;
+  }
+
+  .finetuning-container {
+    width: 105%;
+  }
+}
+
 
 /* tablet in landscape */
 
