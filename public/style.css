@@ -1192,17 +1192,50 @@ margin-left: 10%;
   body {
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    width: 100vw;
+  }
+
+  .navbar {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-link{
+    padding-right: 0;
+    padding-left: 2.5rem;
   }
 
   #intro-container {
-    padding: 1rem 3rem;
-    margin: 1rem auto;
+/*    padding: 1rem 3rem;*/
+/*    margin: 1rem auto;*/
     font-size: 1.5rem;
+    margin-top: 0%;
+    margin-left: 2.5%;
+    width: 90%;
+    margin-right: 0%;
+    height: 70vh;
+  }
+
+.intro-body {
+  margin-bottom: 0;
+}
+.intro-header {
+  display: none;
+}
+  .intro-para {
+    width: 50%;
+  }
+
+  .intro-img {
+    width: 42.5%;
+    margin-left: 0;
+    height: 85%;
   }
 
   #start-btn {
     margin: 1.5rem;
-/*    margin-top: -5rem;*/
+    margin-top: 1rem;
   }
 
   .browser-window {
