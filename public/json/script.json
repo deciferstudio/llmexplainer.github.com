@@ -470,7 +470,7 @@
     ],
       "buttons":[
         {
-          "text":"Start Over",
+          "text":"COMPLETE SURVEY",
           "trigger":"restart",
           "class":["stage-btn"]
         }

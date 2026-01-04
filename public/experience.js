@@ -334,7 +334,8 @@ function renderStep(step) {
 function handleTrigger(trigger, extraData = null) {
 
   if(trigger==="restart"){
-   window.location.href = "experience.html";
+   // window.location.href = "experience.html";
+    window.location.href = "https://nyu.qualtrics.com/jfe/form/SV_aXeS0bKspUZz5TU";
    return;
     };
 
