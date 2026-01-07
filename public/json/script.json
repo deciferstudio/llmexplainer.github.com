@@ -22,7 +22,7 @@
       "additionalClasses": ["main-container-crazy", "test"],
       "body": [
         {
-          "text": "AI chatbots have become increasingly common. How much do you know about what they actually are?",
+          "text": "AI chatbots have become increasingly common. How much do you know about how they actually work?",
           "class": "intro-header"
         
         },
