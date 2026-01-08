@@ -205,10 +205,23 @@ font-size: 1.3rem;
 .page-container p, ul, li {
   font-size: 1.2rem;
   text-align: left;
-  padding: .1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-family: 'PTSans';
+}
+
+.page-container {
+  padding: 1rem;
+  overflow-y: scroll;
+  margin-top: 3% ;
 }
 
 
+.page-container h3 {
+  font-family: 'Karrik';
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
 .page-container a {
   color: var(--purple);
 }
@@ -1081,6 +1094,15 @@ width: 70%;
     margin-right: 2.5%;
 
   }
+
+    .page-container p, ul, li {
+    font-size: 1rem;
+  }
+
+  .page-container {
+    margin-top: 10%;
+  }
+
   body {
     margin: 0;
     overflow: hidden;
@@ -1102,6 +1124,7 @@ overflow-y: auto;
     font-size: 1.1rem;
 align-items: flex-start;
 position: fixed;
+/*height: 10rem;*/
 top: 0;
   }
 
@@ -1151,7 +1174,7 @@ padding-bottom: 0;
     display: none !important;
   }
 
-  body.experience-started #intro-container, .page-container{
+  body.experience-started #intro-container {
     display: none !important; 
   }
  
@@ -1502,6 +1525,8 @@ flex-direction: row;
   body {
     overflow-y: scroll;
   }
+
+
 
   .button-stagger-1, .button-stagger-2, .button-stagger-3, .button-stagger-4 , button {
     margin-top: 1rem;
