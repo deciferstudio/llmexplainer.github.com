@@ -482,7 +482,7 @@
     ],
       "buttons":[
         {
-          "text":"COMPLETE SURVEY",
+          "text":"EXPLORE",
           "trigger":"restart",
           "class":["stage-btn"]
         }
