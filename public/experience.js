@@ -168,6 +168,27 @@ function renderStep(step) {
   }
 
 
+const bgVideo = document.getElementById("bg-video");
+
+function showVideo(src) {
+  bgVideo.style.display = "block";
+
+  if (!bgVideo.src.includes(src)) {
+    bgVideo.src = src;
+    bgVideo.load();
+    bgVideo.play();
+  }
+}
+
+function hideVideo() {
+  bgVideo.pause();
+  bgVideo.removeAttribute("src"); // frees memory
+  bgVideo.load();
+  bgVideo.style.display = "none";
+}
+
+
+
  const contentRenderers = {
     body: () => {
       if (step.body) {
@@ -180,27 +201,27 @@ function renderStep(step) {
             p.class.forEach((cls) => para.classList.add(cls));
 
             if(p.class.includes("stage-1-transition")) {
-           browserWindow.style.backgroundImage = "url('../imgs/stage1.gif')";
-           browserWindow.style.backgroundSize = "cover";
-           browserWindow.style.backgroundPosition = "center";
-           browserWindow.style.removeProperty("background-color");
+            showVideo("../imgs/stage1.mp4");
+            browserWindow.style.removeProperty("background-color");
         }
 
           else if(p.class.includes("stage-2-transition")) {
-           browserWindow.style.backgroundImage = "url('../imgs/stage2.gif')";
+            showVideo("../imgs/stage2.mp4");
         }
 
             else if(p.class.includes("stage-3-transition")) {
-           browserWindow.style.backgroundImage = "url('../imgs/stage3.gif')";
+           showVideo("../imgs/stage3.mp4");
         }
 
-            else {
-          browserWindow.style.backgroundImage = "none";
+        else {
+            hideVideo();
+            // browserWindow.style.backgroundImage = "none";
           }
-          }
+        }
 
           if(!p.class) {
             browserWindow.style.backgroundImage = "none";
+            hideVideo();
           }
 
           if (p.type) para.classList.add(`text-${p.type}`);

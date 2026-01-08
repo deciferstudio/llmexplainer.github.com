@@ -51,6 +51,29 @@ body {
   height: 100%;
 }
 
+
+.browser-window {
+  position: relative; /* critical */
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* same as background-size: cover */
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.browser-window > *:not(video) {
+  position: relative;
+  z-index: 1;
+}
+
 .navbar {
   display: flex;
   font-size: 1.25rem;
