@@ -213,16 +213,47 @@ function hideVideo() {
            showVideo("../imgs/stage3.mp4");
         }
 
-        else {
+          else if (p.class.includes("transition-title")) {
+            browserWindow.style.backgroundColor = "#16171a";
+            browserWindow.classList.add("gradient-bg");
+            browserWindow.style.removeProperty("background");
+            console.log("entered transition")
+
+              const loading = document.createElement("div");
+              loading.classList.add("preloader");
+
+              const span1 = document.createElement("span");
+              const span2 = document.createElement("span");
+              const span3 = document.createElement("span");
+              const span4 = document.createElement("span");
+              const span5 = document.createElement("span");
+
+              loading.appendChild(span1);
+              loading.appendChild(span2);
+              loading.appendChild(span3);
+              loading.appendChild(span4);
+              loading.appendChild(span5);
+
+              currentContainer.appendChild(loading);
+          }
+
+                  else {
             hideVideo();
             // browserWindow.style.backgroundImage = "none";
           }
+
         }
 
           if(!p.class) {
             browserWindow.style.backgroundImage = "none";
+            browserWindow.style.removeProperty("background-color");
+            browserWindow.style.background = "#fff";
+            browserWindow.classList.remove("gradient-bg");
+
             hideVideo();
           }
+
+           
 
           if (p.type) para.classList.add(`text-${p.type}`);
 

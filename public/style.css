@@ -1,6 +1,9 @@
 :root {
 --purple: #957AE5;
 --dark-grey: #16171a;
+--green: #6fd9bb;
+--red: #dfc12c;
+--yellow: #dfc12c;
 }
 
   @font-face {
@@ -164,6 +167,70 @@ a {
 }
 
 
+.transition-title {
+  margin-top: 15%;
+  font-family: 'Karrik';
+/*  color: white;*/
+}
+.preloader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.preloader span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #19e3d5;
+  margin: 0 7px;
+  border-radius: 10px;
+  animation: 1.7s upDown infinite;
+  margin-bottom: 5%;
+}
+
+.preloader span:first-child {
+  animation-delay: .15s;
+}
+
+.preloader span:nth-child(2) {
+  animation-delay: .3s;
+}
+
+.preloader span:nth-child(3) {
+  animation-delay: .45s;
+}
+
+.preloader span:nth-child(4) {
+  animation-delay: .6s;
+}
+
+.preloader span:last-child {
+  animation-delay: .75s;
+}
+
+@keyframes upDown {
+  0% {
+    height: 15px;
+    background: white;
+  }
+
+  50% {
+    height: 60px;
+    background: var(--purple);
+  }
+
+  100% {
+    height: 15px;
+    background: var(--dark-grey);
+  }
+}
+
+
  button {
 margin: 0.5rem;
     padding: 0.5rem 1rem;
@@ -178,7 +245,7 @@ margin: 0.5rem;
   margin: 3rem;
   padding: 15px 40px;
   border-radius: 10px;
-  background: #6AEFB5;
+  background: var(--green);
   border: 0;
   border-radius: 5px;
   box-shadow: 0 6px 0 #4D9370, 0 5px 15px -4px #000;
@@ -220,7 +287,7 @@ margin: 0.5rem;
 
 .stage-btn {
 /*  background-color: rgb(207, 245, 233);*/
-  background-color: #6AEFB5;
+  background-color: var(--green);
   box-shadow: 0 6px 0 #4D9370, 0 5px 15px -4px #000;
 /*  border-radius: 0.3rem;*/
   width: 35%;
@@ -503,7 +570,7 @@ margin-top: 10%;
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4CAA81, #6AEFB5);
+  background: linear-gradient(90deg, #4CAA81, var(--green));
   transition: width 0.6s ease;
   width: 0%;
 }
@@ -645,7 +712,7 @@ margin-top: 10%;
 }
 
 .button-choice:hover {
-  background-color: #6AEFB5;
+  background-color: var(--green);
   cursor: pointer;
 }
 
@@ -664,7 +731,7 @@ margin-top: 10%;
 }
 
 .button-choice.selected {
-  background-color: #6AEFB5;
+  background-color: var(--green);
   border-color: green;
 }
 
@@ -1692,5 +1759,29 @@ flex-direction: row;
   }
   .stage-tag {
     width: 15%;
+  }
+}
+
+
+.gradient-bg {
+  background: linear-gradient(
+    270deg,
+    var(--yellow),
+    var(--red),
+    var(--green)
+  );
+  background-size: 600% 600%;
+  animation: gradientShift 12s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

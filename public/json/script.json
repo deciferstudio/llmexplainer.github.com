@@ -292,12 +292,12 @@
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 3500, "trigger": "data-prob" }
+      "timer": { "duration": 4500, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy." }],
-      "timer": { "duration": 3500, "trigger": "training-step-1" }
+      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
+      "timer": { "duration": 4500, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
@@ -1760,7 +1760,7 @@
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is environmentally costly, using up large amounts of water and energy." }],
+      "body": [{ "text": "This process is environmentally costly, using up large amounts of water and energy." , "class": "transition-title"}],
       "timer": { "duration": 3500, "trigger": "training-step-1" }
     },
     {
