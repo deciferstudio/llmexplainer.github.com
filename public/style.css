@@ -2,7 +2,7 @@
 --purple: #957AE5;
 --dark-grey: #16171a;
 --green: #6fd9bb;
---red: #dfc12c;
+--red: #811c31;
 --orange: #FBD9B8;
 --yellow: #f6e7b0;
 --pink: #ffc6e0;
@@ -439,7 +439,7 @@ background-size: cover;
   flex-direction: column;
   border: 0.125rem solid #ccc;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem .5rem rgba(200, 200, 200, 0.6);
   background: #fff;
   width: 70%;
   max-width: 70%;
@@ -522,13 +522,16 @@ margin-top: 10%;
 }
 
 .browser-header .red {
-  background: #ff5f57;
+/*  background: #ff5f57;*/
+background: var(--red);
 }
 .browser-header .yellow {
-  background: #ffbd2e;
+/*  background: #ffbd2e;*/
+background: var(--yellow);
 }
 .browser-header .green {
-  background: #28c940;
+/*  background: #28c940;*/
+background: var(--green);
 }
 
 .browser-header .url-bar {
