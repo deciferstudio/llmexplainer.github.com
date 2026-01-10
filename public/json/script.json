@@ -27,7 +27,7 @@
         
         },
         {
-          "text": "In this explainer, you will go through the main stages of building a chatbot (like ChatGPT, Claude, or DeepSeek). From choosing what type of data it's trained on to the tone it responds in, you'll make the kinds of decisions that go into the development of these technologies. Learn what labor and resources are required behind the scenes, and what capabilities, limitations, and risks they introduce.",
+          "text": "With no prior knowledge, explore what goes into building an AI chatbot (like ChatGPT, Claude, or DeepSeek). From choosing the type of data it's trained on to the tone it responds in, see how the technology really works, and how your decisions can impact its outcomes. Learn what labor and resources are required behind the scenes, and what capabilities, limitations, and risks they introduce.",
           "class": ["intro-para"]
         }
       ],
@@ -44,13 +44,13 @@
           "class": ["fade-in"]
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses.",
+          "text": "A <i>\"language model\"</i> is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model.",
           "class": ["fade-in-delayed"]
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used ________",
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________",
           "animation": "typewriter",
           "speed": 50,
           "delay": 900
@@ -88,12 +88,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         },
         {
           "text": "next.",
@@ -120,12 +120,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used ________"
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "now.",
@@ -151,12 +151,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs).  "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"
         },
         {
           "text": "correctly",
@@ -184,13 +184,12 @@
           "text": "Complex chatbots, or \"conversational agents\" such as ChatGPT, Claude, or DeepSeek, are often powered by large language models (LLMs). "
         },
         {
-          "text": "A \"<i>language model</i>\" is a piece of software that is trained to predict language sequences and generate text responses."
+          "text": "A <i>\"language model\"</i>  is a piece of software that is trained to predict language sequences and generate text responses. A mobile keyboard's autocomplete function, like the example below, is a language model."
         }
       ],
       "interactiveBody": [
         {
-          "text": " Autocomplete, for example, is a language model that predicts what word or phrase is most statistically likely to be used"
-        },
+          "text": "Autocomplete shows you what word or phrase is most statistically likely to be used"        },
         {
           "text": "!",
           "animation": "typewriter",
@@ -222,7 +221,7 @@
           "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. Select your primary training data:"
+          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
@@ -272,7 +271,7 @@
           "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
         },
         {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. Select your model's training data below:"
+          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
         }
       ],
       "buttons": [
@@ -292,12 +291,12 @@
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 4500, "trigger": "data-prob" }
+      "timer": { "duration": 4700, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
       "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
-      "timer": { "duration": 4500, "trigger": "training-step-1" }
+      "timer": { "duration": 4700, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
@@ -306,7 +305,7 @@
         {
           "text": "The model can estimate the <b>probability</b> of a character, word, or sequence of words occurring in text based on how commonly it occurred in your <b>data source</b>, and generates new text accordingly."
         },
-        { "text": "Pick a sentence, and see what word is most likely to come next:" }
+        { "text": "Pick a sentence from the examples below, and see what word is most likely to come next:" }
       ],
       "buttons": [
         {
@@ -401,7 +400,7 @@
       "trigger": "finetuning-step-3",
       "body": [
         {
-          "text": "In this final step, you can craft your chatbot's \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
+          "text": "You're almost done building your chatbot! In this final step, craft its \"personality\" by deciding how it responds to questions—more like a friend, a teacher, or a boss. But remember, regardless of how friendly or relatable it sounds—which can make it easy to forget you're talking to a machine—the underlying technology will still do the same thing:"
         },
         {
           "text": "<span style='color:'><strong>Make statistical predictions about what text should come next.</strong>"
