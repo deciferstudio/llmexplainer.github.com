@@ -26,12 +26,13 @@ const customRenderers = {
 
 let currentProgress = 0;
 const PROGRESS_MILESTONES = {
-  "stage-1": 10,
+  "stage-1-loader": 10,
   "choice-data": 20,
+  "data-training-loader": 20,
   "training-step-1": 30,
-  "finetuning-step-1": 40,
-  "finetuning-step-3": 60,
-  "finetuning-step-4": 80,
+  "finetuning-loader": 50,
+  "finetuning-step-3": 80,
+  "stage-3-loader": 90,
   "stage-3A-chatbot": 100
 
   //add and edit as we go
