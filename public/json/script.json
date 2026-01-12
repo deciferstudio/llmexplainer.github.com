@@ -431,7 +431,7 @@
       "trigger": "stage-3-intro",
       "body": [
         {
-          "text": "Time to try out your chabot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
+          "text": "Time to try out your chatbot! It will generate text based on your previous decisions, like your choice of training data or level of friendliness."
         },
         {
           "text": "Now that you know how this technology is built, <b>reflect on what kinds of questions are appropriate to ask a language model.</b> Select as many questions as you want, then click 'Next'."
