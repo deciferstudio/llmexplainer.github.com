@@ -123,6 +123,28 @@ function showStageTag() {
 }
 //display current step
 
+
+const bgVideo = document.getElementById("bg-video");
+
+function showVideo(src) {
+  bgVideo.style.display = "block";
+
+  if (!bgVideo.src.includes(src)) {
+    bgVideo.src = src;
+    bgVideo.load();
+    bgVideo.play();
+  }
+}
+
+function hideVideo() {
+  bgVideo.pause();
+  bgVideo.removeAttribute("src"); // frees memory
+  bgVideo.load();
+  bgVideo.style.display = "none";
+}
+
+
+
 function renderStep(step) {
   const mainContainer = document.getElementById("main-container");
   let genericContainer = document.getElementById("generic-container");
@@ -164,30 +186,8 @@ function renderStep(step) {
   if (step.timer) {
     setTimeout(() => {
       handleTrigger(step.timer.trigger);
-      console.log("hi");
     }, step.timer.duration);
   }
-
-
-const bgVideo = document.getElementById("bg-video");
-
-function showVideo(src) {
-  bgVideo.style.display = "block";
-
-  if (!bgVideo.src.includes(src)) {
-    bgVideo.src = src;
-    bgVideo.load();
-    bgVideo.play();
-  }
-}
-
-function hideVideo() {
-  bgVideo.pause();
-  bgVideo.removeAttribute("src"); // frees memory
-  bgVideo.load();
-  bgVideo.style.display = "none";
-}
-
 
 
  const contentRenderers = {
@@ -202,16 +202,16 @@ function hideVideo() {
             p.class.forEach((cls) => para.classList.add(cls));
 
             if(p.class.includes("stage-1-transition")) {
-            showVideo("../imgs/stage1.mp4");
+            // showVideo("../imgs/stage1.mp4");
             browserWindow.style.removeProperty("background-color");
         }
 
           else if(p.class.includes("stage-2-transition")) {
-            showVideo("../imgs/stage2.mp4");
+            // showVideo("../imgs/stage2.mp4");
         }
 
             else if(p.class.includes("stage-3-transition")) {
-           showVideo("../imgs/stage3.mp4");
+           // showVideo("../imgs/stage3.mp4");
         }
 
           else if (p.class.includes("transition-title")) {
@@ -339,7 +339,6 @@ function hideVideo() {
           }
 
           if (b.delay) {
-            console.log("yeahyeah");
             //a patchy fix for wanting buttons to delay even more thru css animations and the "delay" key in the json. For buttons, delay is in the button object and it's written as a STRING e.g: "7.0s", with the unit.
             btn.style.setProperty("--extra-delay", b.delay);
           }
