@@ -16,6 +16,8 @@ let userPersonality = {
   wordiness: 50,
 };
 
+let activeStepTimer = null;
+
 const customRenderers = {
   // "stage-1": nextButtonForDataSelection,
   "training-step-1": renderTrainingStep1,
@@ -127,6 +129,7 @@ function showStageTag() {
 const bgVideo = document.getElementById("bg-video");
 
 function showVideo(src) {
+  console.log("showing video");
   bgVideo.style.display = "block";
 
   if (!bgVideo.src.includes(src)) {
@@ -137,6 +140,7 @@ function showVideo(src) {
 }
 
 function hideVideo() {
+  console.log("hiding video");
   bgVideo.pause();
   bgVideo.removeAttribute("src"); // frees memory
   bgVideo.load();
@@ -184,10 +188,12 @@ function renderStep(step) {
 
   //if it is a timed step, it's handled here, and it reads from a "timer" key in the corresponding step. duration here is in ms.
   if (step.timer) {
-    setTimeout(() => {
-      handleTrigger(step.timer.trigger);
-    }, step.timer.duration);
+     activeStepTimer = setTimeout(() => {
+  handleTrigger(step.timer.trigger);
+}, step.timer.duration);
   }
+
+ 
 
 
  const contentRenderers = {
@@ -385,6 +391,11 @@ function renderStep(step) {
 }
 
 function handleTrigger(trigger, extraData = null) {
+
+  if (activeStepTimer) {
+    clearTimeout(activeStepTimer);
+    activeStepTimer = null;
+  }
 
   if(trigger==="restart"){
    // window.location.href = "experience.html";
