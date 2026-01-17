@@ -150,6 +150,12 @@ function hideVideo() {
 
 
 function renderStep(step) {
+
+  if (activeStepTimer) {
+  clearTimeout(activeStepTimer);
+  activeStepTimer = null;
+}
+
   const mainContainer = document.getElementById("main-container");
   let genericContainer = document.getElementById("generic-container");
   currentContainer = genericContainer; 
@@ -193,7 +199,7 @@ function renderStep(step) {
 }, step.timer.duration);
   }
 
- 
+
 
 
  const contentRenderers = {
