@@ -233,7 +233,7 @@ function renderStep(step) {
             browserWindow.style.backgroundColor = "#16171a";
             browserWindow.classList.add("gradient-bg");
             browserWindow.style.removeProperty("background");
-            console.log("entered transition")
+            console.log("entered transition");
 
               const loading = document.createElement("div");
               loading.classList.add("preloader");
@@ -344,6 +344,7 @@ function renderStep(step) {
         step.buttons.forEach((b) => {
           const btn = document.createElement("button");
           btn.textContent = b.text;
+          btn.type = "button";
           if (b.id) btn.id = b.id;
           if (b.class) {
             b.class.forEach((cls) => btn.classList.add(cls));

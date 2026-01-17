@@ -264,13 +264,14 @@ margin: 0.5rem;
 
   width: 6rem;
   position: relative;
+  z-index: 15;
 }
 
 
- button:active {
+/* button:active {
   box-shadow: 0 0 0 #350515, 0 2px 6px -4px #000;
   transform: translateY(6px);
-}
+}*/
 
 
  button:hover, button:focus{
@@ -314,8 +315,8 @@ margin: 0.5rem;
 
 
 .stage-btn:active {
-  box-shadow: 0 0 0 #053525, 0 2px 6px -4px #000;
-  top: 6px;
+/*  box-shadow: 0 0 0 #053525, 0 2px 6px -4px #000;*/
+/*  top: 6px;*/
 }
 
  #start-btn {
@@ -480,6 +481,7 @@ margin-top: 10%;
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
+  z-index: 14;
 }
 
 .interactive-body span {
@@ -502,6 +504,19 @@ margin-top: 10%;
   max-width: 90%;
 /*  min-height: 35rem;*/
   justify-content: center;
+}
+
+
+.browser-window button {
+  pointer-events: auto;
+}
+#main-container button, #main-container .button-group button {
+  pointer-events: auto;
+}
+
+
+.button-group button {
+  pointer-events: auto;
 }
 
 .browser-header {
@@ -662,7 +677,7 @@ background: var(--green);
   to {
     opacity: 1;
     transform: translateY(0);
-      pointer-events: auto;
+/*      pointer-events: auto;*/
   }
 }
 
@@ -1273,7 +1288,7 @@ padding-bottom: 0;
   body {
     margin: 0;
 /*    overflow: hidden;*/
-overflow-y: scroll
+overflow-y: scroll;
 
   }
 
@@ -1582,8 +1597,8 @@ margin-left: 10%;
 
 .button-group button:clicked  {
   box-shadow: 0 5px #666;
-  transition: transform 0.1s, box-shadow 0.1s;
-  top: 6px;
+/*  transition: transform 0.1s, box-shadow 0.1s;*/
+/*  top: 6px;*/
 }
 
 #data-next-btn button {
