@@ -46,7 +46,7 @@ async function loadIntro() {
     intro_img.className = "intro-img";
 
     const intro_para = document.createElement("p");
-    intro_para.textContent = introStep.body[1].text;
+    intro_para.innerHTML = introStep.body[1].text;
     intro_para.className = introStep.body[1].class;
     if (isRTL) intro_para.setAttribute('dir', 'rtl');
 
