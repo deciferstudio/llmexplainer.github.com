@@ -217,7 +217,7 @@ function renderStep(step) {
         step.body.forEach((p) => {
           const para = document.createElement("p");
           if (p.id) para.id = p.id;
-          if (isRTL) para.setAttribute('dir', 'rtl');
+          // if (isRTL) para.setAttribute('dir', 'rtl');
           //adding extra classes for styling, this is for classes that are specific to the element, such as the paragraph,
           // they exist in an array in the element key-value pair in the json. eg: {"text": "llms xyz", "class":["fade-in","another-class"]}
           if (p.class) {
@@ -304,6 +304,7 @@ function renderStep(step) {
         const interactiveBodyDiv = document.createElement("div");
         interactiveBodyDiv.classList.add("interactive-body");
          if (isRTL) interactiveBodyDiv.setAttribute('dir', 'rtl');
+         interactiveBodyDiv.style.setProperty("text-align", "center");
 
         //again any additional classes for specific p elements or so
         if (step.interactiveBodyClass) {
@@ -355,7 +356,7 @@ function renderStep(step) {
           btn.textContent = b.text;
           btn.type = "button";
           if (b.id) btn.id = b.id;
-           if (isRTL) btn.setAttribute('dir', 'rtl'); //tbh idk if buttons need this bas lets see
+          //  if (isRTL) btn.setAttribute('dir', 'rtl'); //tbh idk if buttons need this bas lets see
           if (b.class) {
             b.class.forEach((cls) => btn.classList.add(cls));
           }

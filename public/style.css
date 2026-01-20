@@ -281,7 +281,7 @@ margin: 0.5rem;
 
  button:hover, button:focus{
   cursor: pointer;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   outline: 0;
 
 }
@@ -672,7 +672,17 @@ background: var(--green);
 .typewriter.done {
   border-right: 2px solid transparent;
 }
+/* typewriter for ar */
+[dir="rtl"] .typewriter{
+  border-right: none;
+  border-left: 2px solid #333;
+  text-align: center;
+}
 
+[dir="rtl"] .typewriter.done{
+  border-left: 2px solid transparent;
+  border-right: none;
+}
 /* CSS Animations */
 @keyframes fadeIn {
   from {
