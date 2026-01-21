@@ -788,21 +788,21 @@
       "trigger": "training-step-2",
       "body": [
         {
-          "text": "By acquiring information and learning from text patterns in the data, a language model can seem to <b>ramble about a topic</b>."
+          "text": "من خلال اكتساب المعلومات والتعلم من الأنماط النصية في مصادر البيانات، قد يبدأ النموذج اللغوي <b> بالحديث بشكل عشوائي وغير مرتب عن موضوع ما </b>"
         },
         {
-          "text": "For example, if you ask: <span class='text-orange'>What is your first name?</span>"
+          "text": "على سبيل المثال، إذا سألت النموذج: <span class='text-orange'> ما اسمك الأول؟ </span>"
         },
         {
-          "text": "Based on what typically occurs next in empty online forms, it may respond with: <span class='text-red'>What is your last name?</span>"
+          "text": "قد يجيب النموذج:<span class='text-red'> ما اسم العائلة؟  </span> بناءً على ما يظهر عادةً في الاستمارات الإلكترونية"
         },
         {
-          "text": "This is where <b>post-training</b> and <b>fine-tuning</b> come in, to turn the model from sounding like a <b>random text generator</b> to a realistic chatbot."
+          "text": "هنا يأتي دور المراحل القادمة كمرحلة  <b> ما بعد التدريب </b> ومرحلة  <b> الضبط الدقيق</b>، لتحويل النموذج من مجرد  <b> مولد نصوص عشوائي </b> إلى بوت دردشة واقعي ومقنع"
         }
       ],
       "buttons": [
         {
-          "text": "STAGE 2: Post-Training",
+          "text": "المرحلة الثانية: ما بعد التدريب",
           "trigger": "finetuning-loader",
           "class": ["stage-btn"]
         }
@@ -810,7 +810,7 @@
     },
     {
       "trigger": "finetuning-loader",
-      "body": [{ "text": "STAGE 2: POST-TRAINING", "class": ["stage-2-transition"] }],
+      "body": [{ "text": "المرحلة الثانية: ما بعد التدريب", "class": ["stage-2-transition"] }],
       "timer": { "duration": 4000, "trigger": "finetuning-step-1" }
     },
 
