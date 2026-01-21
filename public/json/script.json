@@ -417,6 +417,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -535,7 +536,7 @@
           "class": ["fade-in"]
         },
         { 
-          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذج لغوي",
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا",
           "class": ["fade-in-delayed"]
         }
       ],
@@ -553,19 +554,19 @@
           "text": "تاليًا",
           "trigger": "choice-next",
           "class": ["button-stagger-1"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         },
         {
           "text": "الآن",
           "trigger": "choice-now",
           "class": ["button-stagger-2"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         },
         {
           "text": "بشكل صحيح",
           "trigger": "choice-correctly",
           "class": ["button-stagger-3"],
-          "delay": "7.0s"
+          "delay": "5.15s"
         }
       ],
       "__comment": "so triggers can also point to an indexed step"
@@ -579,7 +580,7 @@
           "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذج لغوي."
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا."
         }
       ],
       "interactiveBody": [
@@ -611,7 +612,7 @@
           "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذج لغوي"
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا"
         }
       ],
       "interactiveBody": [
@@ -642,7 +643,7 @@
           "text": "غالبًا ما يتم تشغيل <b> بوتات الدردشة المعقدة </b> أو <b>\"وكلاء المحادثة\"</b> بواسطة  <b> النماذج اللغوية الكبيرة</b> "
         },
         {
-          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذج لغوي"
+          "text": "<b><i>النموذج اللغوي</i></b> هو برنامج تم تدريبه على التنبؤ بتسلسلات اللغة وتوليد الردود النصية. الإكمال التلقائي في لوحة مفاتيح الهاتف المحمول، كما في المثال أدناه، يعتبر نموذجًا لغويًا"
         }
       ],
       "interactiveBody": [
@@ -679,43 +680,43 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "To build a language model, you need <b>training data</b>, or <b>large</b> bodies of text a model finds patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+          "text": "لبناء نموذج لغوي، تحتاج إلى  <b> بيانات </b> أو مجموعة من<b> النصوص الكبيرة </b> لتدريب النموذج على إيجاد الأنماط اللغوية وكتابة النصوص بالاستناد إليها. كلما زاد حجم البيانات كلما زادت قدرة النموذج على إنتاج نصوص معقدة ومناسبة"
         },
         {
-          "text": "The internet is a large source of text already written by other people, like forums, books, or research papers. To start building your chatbot, select a data source below:"
+          "text": "يعد محتوى الانترنت مصدرًا كبيرًا لنصوص كتبها أشخاص آخرون، مثل المنتديات أو الكتب أو الأوراق البحثية. لبدء بناء بوت الدردشة الخاص بك، حدد مصدر البيانات أدناه"
         }
       ],
       "buttons": [
         {
-          "text": "Academic papers",
+          "text": "الأوراق البحثية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
           "delay": "1.0s"
         },
         {
-          "text": "News articles",
+          "text": "المقالات الإخبارية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 0,
           "delay": "1.0s"
         },
         {
-          "text": "Reddit posts",
+          "text": "محتوى مواقع التواصل الاجتماعي",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
           "delay": "1.0s"
         },
         {
-          "text": "Personal blogs",
+          "text": "المدونات الشخصية",
           "trigger": "choice-data",
           "class": ["button-choice"],
           "dataValue": 1,
           "delay": "1.0s"
         },
         {
-          "text": "Next",
+          "text": "التالي",
           "trigger": "data-training-loader",
           "class": ["stage-btn"],
           "delay": "2.0s",
@@ -729,10 +730,10 @@
       "order": ["body", "buttons", "interactiveBody"],
       "body": [
         {
-          "text": "The first thing you’ll need to build a language model is training data, or <b>large</b> bodies of text that a language model looks for patterns in, and produces text based on. The larger the data, the more complex the model's ability to produce appropriate text."
+          "text": "لبناء نموذج لغوي، تحتاج إلى  <b> بيانات </b> أو مجموعة من<b> النصوص الكبيرة </b> لتدريب النموذج على إيجاد الأنماط اللغوية وكتابة النصوص بالاستناد إليها. كلما زاد حجم البيانات كلما زادت قدرة النموذج على إنتاج نصوص معقدة ومناسبة"
         },
         {
-          "text": "The internet provides a large source of text data, like social media sites, blogs, digital books, or research papers. To start building your chatbot, select a data source below:"
+          "text": "يعد محتوى الانترنت مصدرًا كبيرًا لنصوص كتبها أشخاص آخرون، مثل المنتديات أو الكتب أو الأوراق البحثية. لبدء بناء بوت الدردشة الخاص بك، حدد مصدر البيانات أدناه"
         }
       ],
       "buttons": [
@@ -748,16 +749,16 @@
       "trigger": "data-training-loader",
       "body": [
         {
-          "text": "Going from massive data to a working model requires extensive power and resources, often at computing hubs called data centers.",
+          "text": "يتطلب الانتقال من قواعد البيانات الضخمة إلى نموذج لغوي فعّال، قدرًا كبيرًا من الطاقة والموارد <br> يحصل هذا غالبًا في مراكز حوسبة تُسمى مراكز البيانات ",
           "class": ["transition-title"]
         }
       ],
-      "timer": { "duration": 4700, "trigger": "data-prob" }
+      "timer": { "duration": 6500, "trigger": "data-prob" }
     },
     {
       "trigger": "data-prob",
-      "body": [{ "text": "This process is expensive and environmentally costly, using up large amounts of energy.", "class": ["transition-title"]}],
-      "timer": { "duration": 4700, "trigger": "training-step-1" }
+      "body": [{ "text": "هذه عملية مكلفة ماديًا ولها تبعات بيئية كثيرة نظرًا لاستهلاكها كميات كبيرة من الطاقة", "class": ["transition-title"]}],
+      "timer": { "duration": 5500, "trigger": "training-step-1" }
     },
     {
       "trigger": "training-step-1",
@@ -878,6 +879,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -1368,6 +1370,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -1862,6 +1865,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
@@ -2354,6 +2358,7 @@
       "trigger": "finetuning-step-4",
       "order": ["custom"],
       "sliderLabels": ["Random", "Friendly", "Wordy"],
+      "placeholderText": "Drag the bars above and click 'Generate Text' to view sample outputs. When you decide on your final selection for your chatbot's personality, click 'Next'.",
       "generateButtonText": "Generate Text",
       "nextButton": [
         { "text": "Next", "trigger": "stage-3-loader", "class": ["stage-btn"] }
