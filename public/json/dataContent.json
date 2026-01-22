@@ -279,14 +279,14 @@
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Oh, great question! So here's the scoop — looks like your meeting got rescheduled to tomorrow morning! Honestly, that might actually work out better since it gives everyone a bit more time to prepare. Want me to update your calendar?",
-        "h-h-l": "Good news! Your meeting's been moved to tomorrow. Want me to add it to your calendar?",
-        "h-l-h": "Your meeting has been rescheduled to tomorrow morning. This change was made earlier today. I can provide additional details about the updated schedule if needed.",
-        "h-l-l": "Meeting rescheduled. Tomorrow morning.",
-        "l-h-h": "I wanted to let you know that your meeting has been rescheduled for tomorrow morning! This should give everyone a little extra time to prepare. Let me know if you'd like me to send any reminders or update your calendar.",
-        "l-h-l": "Your meeting is now tomorrow morning. Need me to update anything?",
-        "l-l-h": "The meeting originally scheduled for today has been postponed to tomorrow morning in accordance with the revised schedule. Please confirm if you require any additional information.",
-        "l-l-l": "Meeting moved to tomorrow."
+        "h-h-h": "نودّ إبلاغكم، بكل ودّ وتقدير، بأنه طرأ تغيير على الخطة، ما استدعى إعادة جدولة الاجتماع إلى موعد لاحق، شاكرين لكم مرونتكم وتفهمكم.",
+        "h-h-l": "نحب أن نخبركم بأنه تم تغيير موعد الاجتماع، مع الشكر لتفهمكم.",
+        "h-l-h": "بسبب بعض التغييرات في الترتيبات، تقرر تأجيل الاجتماع المقرر، وسيتم لاحقًا الإعلان عن الموعد الجديد عند اكتمال التنسيق.",
+        "h-l-l": "تقرر تغيير موعد الاجتماع.",
+        "l-h-h": "يؤسفني إبلاغكم بأنه تم تأجيل الاجتماع نتيجة ترتيبات جديدة، ونقدّر كثيرًا تعاونكم وتفهمكم لهذا التغيير.",
+        "l-h-l": "تم تأجيل الاجتماع، ونقدّر تفهمكم.",
+        "l-l-h": "تم اتخاذ قرار بتأجيل الاجتماع إلى موعد لاحق بسبب تغييرات تنظيمية طرأت مؤخرًا.",
+        "l-l-l": "الاجتماع مؤجّل."
       },
       "chatbotResponses": {
         "h-h-h": [
@@ -385,14 +385,14 @@
         }
       },
       "personalitySlidersTxt": {
-        "h-h-h": "Hey, so I checked your schedule and guess what — that meeting got pushed to tomorrow morning! Kinda last minute, but honestly it might be better anyway. Want me to set a reminder for you?",
-        "h-h-l": "Heads up! Meeting's tomorrow now. Want a reminder?",
-        "h-l-h": "I've detected a schedule change. The meeting previously set for today has been moved to tomorrow morning. No action is required unless you wish to modify your calendar.",
-        "h-l-l": "Schedule updated. Meeting tomorrow.",
-        "l-h-h": "Just wanted to give you a friendly update — your meeting has been moved to tomorrow morning! That gives you a bit more breathing room today. Would you like me to adjust any reminders or send notifications?",
-        "l-h-l": "Quick update: meeting's tomorrow. Need any changes?",
-        "l-l-h": "I am notifying you of a scheduling update. The meeting has been rescheduled from today to tomorrow morning. Please review your calendar and confirm if further assistance is required.",
-        "l-l-l": "Meeting rescheduled to tomorrow."
+        "h-h-h": "نظرًا لظروف تنظيمية طرأت مؤخرًا، نودّ إعلامكم بكل تقدير بأنه قد تقرر إعادة جدولة الاجتماع إلى موعد لاحق، مع خالص الشكر لتفهمكم وتعاونكم المستمر.",
+        "h-h-l": "نودّ إبلاغكم بأنه قد تقرر تغيير موعد الاجتماع، شاكرين لكم تفهمكم.",
+        "h-l-h": "بناءً على مستجدات تنظيمية غير متوقعة، تم اتخاذ قرار بإعادة جدولة الاجتماع المقرر سابقًا، على أن يتم لاحقًا تحديد الموعد البديل وفق الترتيبات المناسبة.",
+        "h-l-l": "تم تغيير موعد الاجتماع إلى وقت آخر.",
+        "l-h-h": "نودّ إعلامكم بأنه تقرر إعادة جدولة الاجتماع لأسباب تنظيمية، ونقدّر تعاونكم وتفهمكم لهذا الإجراء.",
+        "l-h-l": "تم تأجيل الاجتماع، ونشكركم على تفهمكم.",
+        "l-l-h": "نُعلمكم بأنه تقرر رسميًا تأجيل الاجتماع المقرر، وسيتم تحديد موعد جديد في وقت لاحق وفق ما تقتضيه الترتيبات.",
+        "l-l-l": "تم تأجيل الاجتماع."
       },
       "chatbotResponses": {
         "h-h-h": [

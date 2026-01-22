@@ -648,8 +648,9 @@ function renderFineTuningStep4(step) {
   const output = document.getElementById("finetuning-4-generated-text");
 
   if (isRTL) {
-    generateBtn.setAttribute('dir', 'rtl');
+    // generateBtn.setAttribute('dir', 'rtl');
     output.setAttribute('dir', 'rtl');
+    output.style.setProperty('text-align', 'right');
   }
 
   outputContainer.classList.add("visible");
