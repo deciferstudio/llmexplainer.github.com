@@ -522,7 +522,7 @@ function renderFineTuningStep2(step) {
     finetuningPrompt.setAttribute('dir', 'rtl');
     resp1.setAttribute('dir', 'rtl');
     resp2.setAttribute('dir', 'rtl');
-    nextBtn.setAttribute('dir', 'rtl');
+    // nextBtn.setAttribute('dir', 'rtl');
   }
 
   let currentRound = 0;

@@ -832,7 +832,7 @@
       "finetuningRounds": [
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -840,7 +840,7 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
@@ -848,14 +848,14 @@
         },
         {
           "question": "this is a sample question lorem ipsum?",
-          "prompt": "Please click on the response you prefer:",
+          "prompt": "يرجى النقر على الرد الذي تفضله",
           "responses": [
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
             "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
           ]
         }
       ],
-      "nextButton": "Next",
+      "nextButton": "التالي",
       "finalTrigger": "finetuning-step-3"
     },
     {
